@@ -436,10 +436,11 @@ let g:airline_symbols.linenr = '⭡'
 
 "let g:Powerline_symbols = 'fancy'
 set colorcolumn=79
+highlight ColorColumn ctermbg=23
 "set mouse=i
 set mouse=a
 
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=23 guibg=23
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
