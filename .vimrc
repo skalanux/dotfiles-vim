@@ -51,8 +51,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/tabman.vim'
 " Airline
 Bundle 'bling/vim-airline'
-" Terminal Vim with 256 colors colorscheme
-Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
 Bundle 'rosenfeld/conque-term'
 " Pending tasks list
@@ -189,20 +187,9 @@ nmap ,r :RecurGrepFast
 nmap ,wR :RecurGrep <cword><CR>
 nmap ,wr :RecurGrepFast <cword><CR>
 
-" use 256 colors when possible
-if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
-	let &t_Co = 256
-    "colorscheme fisa
-    colorscheme elflord
-else
-    colorscheme delek
-endif
-
-" colors for gvim
-if has('gui_running')
-    colorscheme wombat
-endif
-
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 " when scrolling, keep cursor 3 lines away from screen border
 set scrolloff=3
 
