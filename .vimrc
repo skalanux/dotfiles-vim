@@ -64,8 +64,9 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
 set background=dark
-"colorscheme solarized
-colorscheme zenburn
+colorscheme solarized
+"colorscheme zenburn
+"colorscheme default
 
 "if has('gui_running')
 "	  set background=dark
@@ -95,6 +96,7 @@ set laststatus=2
 
 Plugin 'airblade/vim-gitgutter' 
 
+let g:airline_theme = 'solarized'
 let g:gitgutter_enabled = 1
 
 
