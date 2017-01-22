@@ -462,11 +462,5 @@ let g:syntastic_auto_jump = 1
 noremap <F5> :buffers<CR>:buffer<Space>
 map <F6> :SyntasticCheck<CR>
 
-nmap < [
-nmap > ]
-omap < [
-omap > ]
-xmap < [
-xmap > ]
 
 autocmd FileType typescript JsPreTmpl html
