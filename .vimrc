@@ -316,7 +316,7 @@ let g:ctrlp_custom_ignore = {
 " show list of errors and warnings on the current file
 nmap <leader>e :Errors<CR>
 " check also when just opened the file
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 " don't put icons on the sign column (it hides the vcs status icons of signify)
 let g:syntastic_enable_signs = 1
 " custom icons (enable them if you use a patched font, and enable the previous 
@@ -427,7 +427,7 @@ let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 "
 "Added
-"
+
 set shell=bash
 set textwidth=79
 set colorcolumn=79
@@ -464,3 +464,6 @@ map <F6> :SyntasticCheck<CR>
 
 
 autocmd FileType typescript JsPreTmpl html
+
+let g:syntastic_python_flake8_args='--ignore=E501,E225'
+
